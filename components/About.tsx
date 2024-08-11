@@ -16,7 +16,10 @@ export function About() {
   const [copied, setCopied] = React.useState<boolean>(false);
 
   return (
-    <div className="flex mt-7" id="about">
+    <div
+      className="flex mt-7 rounded-lg backdrop-blur-sm dark:border-white/[0.2] border-black/[0.1] border xl:px-16 py-7"
+      id="about"
+    >
       <div className=" basis-full md:basis-1/2 p-5">
         <Reveal>
           <h1 className="font-poppins text-7xl font-bold">About me</h1>
@@ -68,13 +71,9 @@ export function About() {
         {copied ? (
           <div className="flex mt-7 ml-3 gap-2">
             <Reveal>
-              <p className="font-poppins font-semibold text-lg">Copied </p>
-            </Reveal>
-            <Reveal delay={0.05}>
-              <p className="font-poppins font-semibold text-lg">to </p>
-            </Reveal>
-            <Reveal delay={0.1}>
-              <p className="font-poppins font-semibold text-lg">clipboard </p>
+              <p className="font-poppins font-semibold text-lg">
+                Copied to clipboard{" "}
+              </p>
             </Reveal>
           </div>
         ) : (
@@ -83,7 +82,7 @@ export function About() {
       </div>
       <div className=" basis-full md:basis-1/2 hidden md:block py-5 px-16">
         <Reveal className="">
-          <CardContainer className="inter-var w-full  backdrop-blur-sm">
+          <CardContainer className="inter-var w-full ">
             <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black/[0.15]  dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-full h-auto rounded-xl p-1 border  ">
               <div className="">
                 <div className="flex-none border-b border-slate-500/30">

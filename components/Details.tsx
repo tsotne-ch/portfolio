@@ -38,7 +38,6 @@ export function Details() {
     "NodeJS",
     "Firebase",
     "JQuery",
-    "JWT",
   ];
   return (
     <div className="py-24">
@@ -151,7 +150,7 @@ export function Details() {
           </div>
         </Reveal>
       </BentoGrid>
-      <div className="mt-7 flex flex-wrap p-5 md:p-0 gap-3">
+      <div className="mt-7 justify-between flex flex-wrap p-5 md:p-0 gap-3">
         {langs.map((name, index) => (
           <Lang key={index} name={name} />
         ))}

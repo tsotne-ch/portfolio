@@ -51,14 +51,14 @@ const HomePage = () => {
           </button>
         </div>
       </div>
-      <Spotlight
+      {/* <Spotlight
         className="-top-40 left-16 md:left-60 md:-top-20"
         fill="blue"
       />
       <Spotlight
         className="-top-60 -right-16 md:-right-60 md:-top-40"
         fill="purple"
-      />
+      /> */}
       <div className="w-full h-dvh fixed -z-10 top-0 left-0 right-0 bottom-0 backdrop-blur-[500px]" />
       <div className="fixed top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 -z-20">
         <div className="w-96 h-96 rounded-full animate-blob   bg-gradient-to-r from-blue-500 to-blue-900    blur-[500px] opacity-65  scale-x-100 scale-y-150 "></div>
